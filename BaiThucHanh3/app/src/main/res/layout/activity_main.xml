@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:text="Thực hành 03"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Số thứ nhất -->
+    <EditText
+        android:id="@+id/edtSoA"
+        android:hint="Nhập số"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <!-- Hàng nút phép toán -->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnCong"
+            android:text="+"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#E53935"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+
+        <Button
+            android:id="@+id/btnTru"
+            android:text="-"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#F9A825"
+            android:layout_marginStart="12dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+
+        <Button
+            android:id="@+id/btnNhan"
+            android:text="*"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#5E35B1"
+            android:layout_marginStart="12dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+
+        <Button
+            android:id="@+id/btnChia"
+            android:text="/"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#212121"
+            android:layout_marginStart="12dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+    </LinearLayout>
+
+    <!-- Số thứ hai -->
+    <EditText
+        android:id="@+id/edtSoB"
+        android:hint="Nhập số"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <!-- Kết quả -->
+    <TextView
+        android:id="@+id/txtKetQua"
+        android:text="Kết quả:"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
